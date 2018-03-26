@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Link default correctly 1`] = `
+<a
+  href="/some/route"
+  onClick={[Function]}
+>
+  <div
+    className="component"
+  />
+</a>
+`;
+
+exports[`renders Link with node text / icon correctly 1`] = `
+<a
+  href="/some/route"
+  onClick={[Function]}
+>
+  <div
+    className="component"
+  >
+    <div
+      className="icon"
+    >
+      <span>
+        some node icon
+      </span>
+    </div>
+    <div
+      className="text"
+    >
+      <span>
+        some node text
+      </span>
+    </div>
+  </div>
+</a>
+`;
+
+exports[`renders Link with text and icon correctly 1`] = `
+<a
+  href="/some/route"
+  onClick={[Function]}
+>
+  <div
+    className="component"
+  >
+    <div
+      className="icon"
+    >
+      some icon
+    </div>
+    <div
+      className="text"
+    >
+      some text
+    </div>
+  </div>
+</a>
+`;
