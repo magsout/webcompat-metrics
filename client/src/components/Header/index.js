@@ -3,10 +3,10 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 import React from "react";
-import SVGInline from "react-svg-inline";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
+import Svg from "../../components/Svg";
 import SVGLogo from "../../assets/Logo/logo.svg";
 
 import SVGMenu from "./menu.svg";
@@ -27,18 +27,7 @@ class Header extends React.Component {
       <div className={classes.component} role="banner">
         <div className={classes.menu}>
           <button className={classes.button} onClick={e => this.handleClick(e)}>
-            <SVGInline
-              svg={SVGMenu}
-              cleanup={[
-                "title",
-                "desc",
-                "comment",
-                "defs",
-                "sketchMSShape",
-                "sketchMSPage",
-                "sketchMSLayerGroup",
-              ]}
-            />
+            <Svg svg={SVGMenu} />
           </button>
         </div>
         <Link to="/">
@@ -48,20 +37,7 @@ class Header extends React.Component {
               <div>Metrics</div>
             </div>
             <div className={classes.logo}>
-              <SVGInline
-                svg={SVGLogo}
-                height={"4em"}
-                width={"2em"}
-                cleanup={[
-                  "title",
-                  "desc",
-                  "comment",
-                  "defs",
-                  "sketchMSShape",
-                  "sketchMSPage",
-                  "sketchMSLayerGroup",
-                ]}
-              />
+              <Svg svg={SVGLogo} height={"4em"} width={"2em"} />
             </div>
           </div>
         </Link>

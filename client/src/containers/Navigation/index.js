@@ -3,11 +3,11 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 import React, { Fragment } from "react";
-import SVGInline from "react-svg-inline";
 
 import { PinningMenu, PinningHeader } from "../../components/Ui";
 import Header from "../../components/Header";
 import { Link } from "../../components/Menu";
+import Svg from "../../components/Svg";
 import SVGBugdiagnosis from "../../assets/svg/Bugdiagnosis.svg";
 
 class NavigationContainer extends React.Component {
@@ -52,20 +52,7 @@ class NavigationContainer extends React.Component {
           <Link
             to="/needsdiagnosis"
             text={"NeedsDiagnosis"}
-            icon={
-              <SVGInline
-                svg={SVGBugdiagnosis}
-                cleanup={[
-                  "title",
-                  "desc",
-                  "comment",
-                  "defs",
-                  "sketchMSShape",
-                  "sketchMSPage",
-                  "sketchMSLayerGroup",
-                ]}
-              />
-            }
+            icon={<Svg svg={SVGBugdiagnosis} />}
           />
         </PinningMenu>
       </Fragment>

@@ -3,8 +3,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 import React from "react";
-import SVGInline from "react-svg-inline";
 
+import Svg from "../../../components/Svg";
 import SVGTwitter from "../../../assets/svg/iconmonstr-twitter-1.svg";
 import SVGGithub from "../../../assets/svg/iconmonstr-github-1.svg";
 
@@ -20,20 +20,7 @@ const Footer = props => {
           title="Twitter webcompat accounts"
           target="_blank"
           rel="noopener noreferrer">
-          <SVGInline
-            svg={SVGTwitter}
-            fill="#1da1f2"
-            height={"1.5em"}
-            cleanup={[
-              "title",
-              "desc",
-              "comment",
-              "defs",
-              "sketchMSShape",
-              "sketchMSPage",
-              "sketchMSLayerGroup",
-            ]}
-          />
+          <Svg svg={SVGTwitter} fill="#1da1f2" height={"1.5em"} />
         </a>
         <a
           className={classes.social}
@@ -41,20 +28,7 @@ const Footer = props => {
           title="Github webcompat account"
           target="_blank"
           rel="noopener noreferrer">
-          <SVGInline
-            svg={SVGGithub}
-            fill="#c6cbd1"
-            height={"1.5em"}
-            cleanup={[
-              "title",
-              "desc",
-              "comment",
-              "defs",
-              "sketchMSShape",
-              "sketchMSPage",
-              "sketchMSLayerGroup",
-            ]}
-          />
+          <Svg svg={SVGGithub} fill="#c6cbd1" height={"1.5em"} />
         </a>
       </div>
       <div className={classes.footerText}>
