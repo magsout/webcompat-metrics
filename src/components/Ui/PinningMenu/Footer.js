@@ -4,9 +4,8 @@
 
 import React from "react";
 
-import Svg from "../../Svg";
-import SVGTwitter from "../../../assets/svg/iconmonstr-twitter-1.svg";
-import SVGGithub from "../../../assets/svg/iconmonstr-github-1.svg";
+import SVGTwitter from "../../../static/svg/iconmonstr-twitter-1.svg";
+import SVGGithub from "../../../static/svg/iconmonstr-github-1.svg";
 
 import classes from "./styles.css";
 
@@ -20,7 +19,7 @@ const Footer = props => {
           title="Twitter webcompat accounts"
           target="_blank"
           rel="noopener noreferrer">
-          <Svg svg={SVGTwitter} fill="#1da1f2" height={"1.5em"} />
+          <SVGTwitter fill="#1da1f2" height={"1.5em"} />
         </a>
         <a
           className={classes.social}
@@ -28,7 +27,7 @@ const Footer = props => {
           title="Github webcompat account"
           target="_blank"
           rel="noopener noreferrer">
-          <Svg svg={SVGGithub} fill="#c6cbd1" height={"1.5em"} />
+          <SVGGithub fill="#c6cbd1" height={"1.5em"} />
         </a>
       </div>
       <div className={classes.footerText}>

@@ -4,11 +4,9 @@
 
 import React from "react";
 import renderer from "react-test-renderer";
-import { BrowserRouter as Router } from "react-router-dom";
 import sinon from "sinon";
 
-import SVGBugdiagnosis from "../../../../assets/svg/Bugdiagnosis.svg";
-import Svg from "../../../Svg";
+import SVGBugdiagnosis from "../../../../static/svg/Bugdiagnosis.svg";
 
 import Link from "..";
 
@@ -16,14 +14,12 @@ it("renders Link default correctly", () => {
   const onClick = sinon.spy();
   const tree = renderer
     .create(
-      <Router>
-        <Link
-          to="/weeklyreports"
-          text={"Weekly Issue Reports"}
-          icon={<Svg svg={SVGBugdiagnosis} />}
-          onClick={onClick}
-        />
-      </Router>,
+      <Link
+        to="/weeklyreports"
+        text={"Weekly Issue Reports"}
+        icon={<SVGBugdiagnosis />}
+        onClick={onClick}
+      />,
     )
     .toJSON();
   expect(tree).toMatchSnapshot();

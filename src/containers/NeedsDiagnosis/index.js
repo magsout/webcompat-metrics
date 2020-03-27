@@ -6,8 +6,9 @@ import React from "react";
 
 import LineChart from "../../components/LineChart";
 import MetricsTemplate from "../MetricsTemplate";
-import { ObjectNested, Router } from "../../libraries";
+import { ObjectNested } from "../../libraries";
 import { mostAndLeast, normalize } from "../../modules/Chart";
+import Router from "../../routes";
 
 const handleData = data => {
   const localData = ObjectNested.get(data, "timeline", {});

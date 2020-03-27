@@ -5,7 +5,7 @@
 import React from "react";
 
 import MetricsTemplate from "../MetricsTemplate";
-import { Router } from "../../libraries";
+import Router from "../../routes";
 import FramedChart from "../../components/FramedChart";
 
 const handleData = data => {

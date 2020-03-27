@@ -4,37 +4,46 @@
 
 import Router from "../router";
 
-test("Router getRoute()", () => {
-  Router.defineRoute("/needsdiagnosis-timeline", "needsdiagnosis-timeline", {
-    baseUrl: "baseUrl",
-  });
+const RouterInstance = new Router();
 
-  expect(Router.getRoute("needsdiagnosis-timeline")).toEqual(
+test("Router getRoute()", () => {
+  RouterInstance.defineRoute(
+    "/needsdiagnosis-timeline",
+    "needsdiagnosis-timeline",
+    {
+      baseUrl: "baseUrl",
+    },
+  );
+
+  expect(RouterInstance.getRoute("needsdiagnosis-timeline")).toEqual(
     "baseUrl/needsdiagnosis-timeline",
   );
 
   expect(() => {
-    Router.getRoute();
+    RouterInstance.getRoute();
   }).toThrow();
 
-  expect(Router.getRoute("needsdiagnosis-timelines")).toEqual("");
+  expect(RouterInstance.getRoute("needsdiagnosis-timelines")).toEqual("");
 
-  Router.defineRoute("/pdf/download/:id/:type", "pdf-download", {
+  RouterInstance.defineRoute("/pdf/download/:id/:type", "pdf-download", {
     baseUrl: "baseUrl",
   });
-  expect(Router.getRoute("pdf-download", { id: 123, type: "bills" })).toEqual(
-    "baseUrl/pdf/download/123/bills",
-  );
+  expect(
+    RouterInstance.getRoute("pdf-download", { id: 123, type: "bills" }),
+  ).toEqual("baseUrl/pdf/download/123/bills");
 });
 
 test("Router buildUrl()", () => {
-  expect(Router.buildUrl("needsdiagnosis-timeline/", "api")).toEqual(
+  expect(RouterInstance.buildUrl("needsdiagnosis-timeline/", "api")).toEqual(
     "needsdiagnosis-timeline/api",
   );
 });
 
 test("Router stringfyUrl()", () => {
   expect(
-    Router.stringfyUrl("/pdf/download/:id/:type", { id: 123, type: "bills" }),
+    RouterInstance.stringfyUrl("/pdf/download/:id/:type", {
+      id: 123,
+      type: "bills",
+    }),
   ).toEqual("/pdf/download/123/bills");
 });
