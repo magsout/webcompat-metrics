@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 
 // containers
-import TsciContainer from "../containers/Tsci";
+import TsciContainer from "../containers/TSCI";
 
 const Tsci = props => {
   return (
