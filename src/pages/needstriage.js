@@ -4,7 +4,7 @@ import Head from "next/head";
 // containers
 import NeedsTriage from "../containers/NeedsTriage";
 
-const HomePage = props => {
+const HomePage = (props) => {
   return (
     <React.Fragment>
       <Head>

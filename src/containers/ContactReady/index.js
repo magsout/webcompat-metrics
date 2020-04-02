@@ -17,7 +17,7 @@ import {
 import { TEMP_MIN_DATE } from "../../constants/Charts";
 import Router from "../../routes";
 
-const handleData = data => {
+const handleData = (data) => {
   const localData = ObjectNested.get(data, "timeline", {});
   return {
     globalStats: mostAndLeast(localData),
@@ -42,7 +42,7 @@ const ContactReady = () => {
           minTo={TEMP_MIN_DATE}
         />
       )}
-      renderChart={data => (
+      renderChart={(data) => (
         <LineChart
           title={"Open issues in contactready milestone"}
           label={""}

@@ -4,7 +4,7 @@ import Head from "next/head";
 // containers
 import NeedsDiagnosisContainer from "../containers/NeedsDiagnosis";
 
-const NeedsDiagnosis = props => {
+const NeedsDiagnosis = (props) => {
   return (
     <React.Fragment>
       <Head>

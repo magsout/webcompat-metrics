@@ -10,7 +10,7 @@ import SvgBulb from "../../static/svg/bulb.svg";
 import classes from "./styles.css";
 import Container from "./Container";
 
-const Error = props => {
+const Error = (props) => {
   return (
     <Container title={props.title}>
       <div className={classes.fetch}>

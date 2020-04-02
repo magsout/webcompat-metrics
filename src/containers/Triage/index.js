@@ -122,7 +122,7 @@ class Triage extends React.PureComponent {
             />
           </React.Fragment>
         )}
-        renderChart={data => (
+        renderChart={(data) => (
           <Container title={"Open issues in needstriage milestone"}>
             <ContainerIssue mode={this.state.viewMode}>
               {ObjectNested.get(data, "data", []).map((issue, key) => {

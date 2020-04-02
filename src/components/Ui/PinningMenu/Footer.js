@@ -9,7 +9,7 @@ import SVGGithub from "../../../static/svg/iconmonstr-github-1.svg";
 
 import classes from "./styles.css";
 
-const Footer = props => {
+const Footer = (props) => {
   return (
     <footer className={classes.footer}>
       <div className={classes.socials}>

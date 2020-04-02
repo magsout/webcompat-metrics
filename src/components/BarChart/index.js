@@ -9,7 +9,7 @@ import {
 import { Container } from "../Chart";
 
 const pluginLabel = {
-  afterDraw: chart => {
+  afterDraw: (chart) => {
     const ctx = chart.ctx;
     chart.data.datasets.forEach((dataset, i) => {
       const meta = chart.getDatasetMeta(i);
@@ -36,7 +36,7 @@ const pluginLabel = {
   },
 };
 
-const BarChart = props => {
+const BarChart = (props) => {
   const data = {
     ...hydrateData(props),
   };

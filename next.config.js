@@ -3,7 +3,7 @@ const Dotenv = require("dotenv-webpack");
 const FilterWarningsPlugin = require("webpack-filter-warnings-plugin");
 
 module.exports = withCSS({
-  webpack: config => {
+  webpack: (config) => {
     config.plugins.push(
       new Dotenv({ safe: true, systemvars: true, defaults: true }),
     );

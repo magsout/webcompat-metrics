@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/webcompat/webcompat-metrics-client#readme",
   "engines": {
-    "node": ">=12.6.0"
+    "node": ">=13"
   },
   "scripts": {
     "build": "next build",
@@ -32,10 +32,10 @@
     "test:watch": "npm run test:jest -- --watch"
   },
   "dependencies": {
-    "chart.js": "^2.9.3",
     "@zeit/next-css": "^1.0.1",
+    "chart.js": "^2.9.3",
     "dayjs": "^1.8.21",
-    "next": "^9.3.1",
+    "next": "^9.3.4",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-chartjs-2": "^2.9.0",
@@ -43,10 +43,10 @@
     "simple-json-fetch": "^1.0.1"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.3.4",
-    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/preset-env": "^7.9.0",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-react": "^7.9.4",
     "babel-eslint": "^10.1.0",
     "babel-plugin-inline-react-svg": "^1.1.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
@@ -55,15 +55,15 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "eslint": "^6.8.0",
-    "eslint-config-i-am-meticulous": "^11.0.0",
+    "eslint-config-i-am-meticulous": "^12.0.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^25.1.0",
+    "jest": "^25.2.6",
     "jest-fetch-mock": "^3.0.1",
     "postcss-preset-env": "^6.7.0",
-    "prettier": "^1.19.1",
+    "prettier": "^2.0.2",
     "react-test-renderer": "^16.12.0",
     "sinon": "^9.0.0",
     "stylelint": "^13.2.0",

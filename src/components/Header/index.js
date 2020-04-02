@@ -26,7 +26,9 @@ class Header extends React.Component {
     return (
       <div className={classes.component} role="banner">
         <div className={classes.menu}>
-          <button className={classes.button} onClick={e => this.handleClick(e)}>
+          <button
+            className={classes.button}
+            onClick={(e) => this.handleClick(e)}>
             {/*<Svg svg={SVGMenu} />*/}
             <SVGMenu />
           </button>

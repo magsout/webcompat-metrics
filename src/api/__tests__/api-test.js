@@ -3,7 +3,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 import { POST } from "../../constants/Api";
-
 import request from "..";
 
 const requestData = {
@@ -117,8 +116,8 @@ describe("testing api: GET", () => {
         endpoint: "endpoint",
       },
       {
-        onSuccess: payload => expect(payload.timeline).toEqual(responseData),
-        onError: payload => {},
+        onSuccess: (payload) => expect(payload.timeline).toEqual(responseData),
+        onError: (payload) => {},
       },
     );
   });
@@ -140,8 +139,8 @@ describe("testing api: POST", () => {
         },
       },
       {
-        onSuccess: payload => expect(payload.timeline).toEqual(responseData),
-        onError: payload => {},
+        onSuccess: (payload) => expect(payload.timeline).toEqual(responseData),
+        onError: (payload) => {},
       },
     );
   });
@@ -163,8 +162,8 @@ describe("testing api: erreur", () => {
         },
       },
       {
-        onSuccess: payload => {},
-        onError: payload => expect(payload).toEqual("Message error"),
+        onSuccess: (payload) => {},
+        onError: (payload) => expect(payload).toEqual("Message error"),
       },
     );
   });

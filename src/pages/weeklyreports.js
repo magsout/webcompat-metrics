@@ -3,7 +3,7 @@ import React from "react";
 // containers
 import WeeklyReportsContainer from "../containers/WeeklyReports";
 
-const WeeklyReports = props => {
+const WeeklyReports = (props) => {
   return <WeeklyReportsContainer />;
 };
 

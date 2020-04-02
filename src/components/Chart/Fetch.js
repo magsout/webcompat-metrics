@@ -9,7 +9,7 @@ import SvgDost from "../../static/svg/stats-dots.svg";
 import classes from "./styles.css";
 import Container from "./Container";
 
-const Fetch = props => {
+const Fetch = (props) => {
   return (
     <Container title={"Rendering Chart"}>
       <div className={classes.fetch}>

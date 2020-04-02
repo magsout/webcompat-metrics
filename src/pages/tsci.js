@@ -4,7 +4,7 @@ import Head from "next/head";
 // containers
 import TsciContainer from "../containers/TSCI";
 
-const Tsci = props => {
+const Tsci = (props) => {
   return (
     <React.Fragment>
       <Head>

@@ -32,7 +32,7 @@ class NavigationContainer extends React.Component {
   }
 
   handleClick() {
-    this.setState(prevState => ({ isOpened: !prevState.isOpened }));
+    this.setState((prevState) => ({ isOpened: !prevState.isOpened }));
   }
 
   handleResize() {

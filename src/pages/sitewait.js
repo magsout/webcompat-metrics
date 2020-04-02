@@ -4,7 +4,7 @@ import Head from "next/head";
 // containers
 import SiteWaitContainer from "../containers/SiteWait";
 
-const SiteWait = props => {
+const SiteWait = (props) => {
   return (
     <React.Fragment>
       <Head>
