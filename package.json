@@ -25,7 +25,7 @@
     "fix": "npm run lint:fix:JS && npm run lint:fix:CSS",
     "lint:fix:JS": "npm run lint:JS -- --fix",
     "lint:fix:CSS": "npm run lint:CSS -- --fix",
-    "start": "next start",
+    "start": "next start -p $PORT",
     "test": "npm run lint && npm run test:jest",
     "test:jest": "jest --runInBand --detectOpenHandles --coverage --forceExit",
     "test:watch": "npm run test:jest -- --watch"
