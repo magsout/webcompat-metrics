@@ -1,9 +1,6 @@
 {
   "name": "webcompat-metrics",
   "description": "An application to power metrics for webcompat.com",
-  "scripts": {
-    "start": "npm run next start -p $PORT"
-  },
   "engines": {
     "node": ">=13"
   },
