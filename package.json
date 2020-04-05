@@ -1,6 +1,6 @@
 {
   "name": "webcompat-metrics-client",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "An application to power metrics for webcompat.com",
   "license": "MPL-2.0",
   "private": true,
@@ -52,7 +52,6 @@
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.9.4",
     "babel-eslint": "^10.1.0",
-    "dotenv": "^8.2.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "eslint": "^6.8.0",
